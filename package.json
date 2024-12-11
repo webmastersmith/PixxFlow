@@ -1,0 +1,22 @@
+{
+  "name": "pixxflow",
+  "version": "0.0.1",
+  "description": "Automate the Pixx library, an NPM package, to statically create the Pixx images and insert html code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webmastersmith/PixxFlow.git"
+  },
+  "keywords": [
+    "pixx"
+  ],
+  "author": "Bryon Smith",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/webmastersmith/PixxFlow/issues"
+  },
+  "homepage": "https://github.com/webmastersmith/PixxFlow#readme"
+}

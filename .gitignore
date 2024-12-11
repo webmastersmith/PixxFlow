@@ -1,0 +1,7 @@
+*
+!.gitignore 
+!README.md
+!index.ts
+# !src
+!package.json
+!tsconfig.json
