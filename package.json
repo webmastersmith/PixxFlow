@@ -2,9 +2,12 @@
   "name": "pixxflow",
   "version": "0.0.1",
   "description": "Automate the Pixx library, an NPM package, to statically create the Pixx images and insert html code.",
-  "main": "index.js",
+  "main": "pixxflow/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon ./src/index.ts",
+    "dev": "ts-node ./src/index.ts",
+    "predbuild": "rimraf pixxflow",
+    "build": "tsc && tsc-alias"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,23 @@
   "bugs": {
     "url": "https://github.com/webmastersmith/PixxFlow/issues"
   },
-  "homepage": "https://github.com/webmastersmith/PixxFlow#readme"
+  "homepage": "https://github.com/webmastersmith/PixxFlow#readme",
+  "files": [
+    "/pixxflow"
+  ],
+  "devDependencies": {
+    "@swc/core": "^1.10.1",
+    "@swc/helpers": "^0.5.15",
+    "@types/node": "^22.10.2",
+    "nodemon": "^3.1.7",
+    "regenerator-runtime": "^0.14.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "pixx": "^0.0.10"
+  }
 }
